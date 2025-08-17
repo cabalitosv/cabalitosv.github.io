@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cabalito SV</title>
+  <meta name="description" content="Estampados y sublimación — Cabalito SV" />
+  <link rel="icon" href="logo.png" />
+
+  <!-- Tipografía limpia -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg1:#f6f7fb;
+      --bg2:#eef3ff;
+      --card:#ffffff;
+      --text:#1f2937;
+      --muted:#64748b;
+      --brand:#2563eb;
+      --brand-2:#0ea5e9;
+      --ring:rgba(37, 99, 235, .2);
+      --shadow:0 10px 30px rgba(0,0,0,.08);
+    }
+    @media (prefers-color-scheme: dark){
+      :root{
+        --bg1:#0b1220; --bg2:#0f172a; --card:#0f172a;
+        --text:#e5e7eb; --muted:#94a3b8;
+        --brand:#60a5fa; --brand-2:#38bdf8;
+        --ring:rgba(96,165,250,.25);
+        --shadow:0 10px 30px rgba(0,0,0,.35);
+      }
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      color:var(--text);
+      background: radial-gradient(1200px 600px at 20% -10%, var(--bg2), transparent),
+                  radial-gradient(1200px 800px at 120% 20%, var(--bg2), transparent),
+                  linear-gradient(180deg, var(--bg1), var(--bg2));
+      min-height:100svh; display:grid; place-items:center; padding:24px;
+    }
+
+    .card{
+      width:min(720px, 92vw);
+      background:var(--card);
+      border-radius:18px;
+      box-shadow:var(--shadow);
+      padding:28px;
+      border:1px solid rgba(0,0,0,.06);
+    }
+
+    .brand{
+      display:flex; align-items:center; gap:16px; justify-content:center;
+      margin-bottom:10px;
+    }
+    .brand img{
+      width:92px; height:auto; border-radius:12px;
+      box-shadow:0 6px 16px rgba(0,0,0,.08);
+      background:#fff;
+    }
+    .brand h1{
+      font-size:clamp(22px, 3.5vw, 34px);
+      margin:0; line-height:1.1; letter-spacing:.2px;
+    }
+
+    .tagline{
+      text-align:center; margin:6px 0 22px; color:var(--muted);
+      font-size:clamp(14px, 2.2vw, 16px);
+    }
+
+    .links{
+      display:grid; gap:14px;
+      grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .btn{
+      display:flex; align-items:center; justify-content:center; gap:10px;
+      padding:14px 18px; border-radius:12px; text-decoration:none; font-weight:600;
+      background:linear-gradient(135deg, var(--brand), var(--brand-2));
+      color:white; box-shadow:0 8px 18px var(--ring);
+      border:1px solid rgba(255,255,255,.18);
+      transition: transform .12s ease, box-shadow .12s ease, filter .12s ease;
+    }
+    .btn:hover{ transform:translateY(-2px); filter:saturate(1.1); box-shadow:0 12px 24px var(--ring); }
+    .btn svg{ width:22px; height:22px; }
+
+    .footer{
+      margin-top:20px; text-align:center; color:var(--muted); font-size:13px;
+    }
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <header class="brand">
+      <img src="WhatsApp Image 2025-08-17 at 10.12.00 AM.jpeg" alt="Cabalito SV" />
+      <h1>Cabalito SV</h1>
+    </header>
+    <p class="tagline">Estampados y sublimación • El Salvador</p>
+
+    <section class="links" aria-label="Enlaces a redes sociales">
+      <a class="btn" href="https://www.facebook.com/profile.php?id=61575620313113" target="_blank" rel="noopener">
+        <!-- Icono Facebook -->
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.19 8.44 9.94v-7.03H7.9v-2.91h2.54V9.41c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.23.2 2.23.2v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.91h-2.34v7.03C18.34 21.25 22 17.08 22 12.06z"/></svg>
+        Facebook
+      </a>
+
+      <a class="btn" href="https://www.instagram.com/cabalito.svr?igsh=MWFrajltbHUxZzlnMw==" target="_blank" rel="noopener">
+        <!-- Icono Instagram -->
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.5 5.5 0 0 1 12 7.5zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5zM18 6.2a1 1 0 1 1-1.01 1A1 1 0 0 1 18 6.2z"/></svg>
+        Instagram
+      </a>
+
+      <!-- WhatsApp (opcional): reemplaza TUNUMERO con tu número (sin + ni espacios) -->
+      <!-- <a class="btn" href="https://wa.me/503TUNUMERO" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.52 3.48A11.86 11.86 0 0 0 12.01 0C5.38 0 .02 5.36.02 11.98a11.9 11.9 0 0 0 1.77 6.24L0 24l5.93-1.74a11.95 11.95 0 0 0 6.08 1.66h.01c6.63 0 12-5.36 12-11.98a11.86 11.86 0 0 0-3.5-8.46zM12.01 22a9.9 9.9 0 0 1-5.04-1.39l-.36-.21-3.52 1.03 1.05-3.43-.23-.35A9.96 9.96 0 0 1 2.03 12C2.03 6.47 6.5 2 12.01 2c2.66 0 5.16 1.03 7.04 2.9a9.86 9.86 0 0 1 2.94 7.08c0 5.53-4.47 10.02-9.98 10.02zm5.52-7.46c-.3-.15-1.77-.87-2.05-.97-.28-.1-.49-.15-.7.15s-.8.97-.98 1.17c-.18.2-.36.22-.66.08-.3-.15-1.26-.46-2.4-1.46-.88-.74-1.48-1.66-1.65-1.96-.17-.3-.02-.46.13-.61.13-.13.3-.33.45-.5.15-.17.2-.28.3-.48.1-.2.05-.37-.02-.52-.08-.15-.7-1.68-.96-2.3-.25-.6-.51-.52-.7-.53l-.6-.01c-.2 0-.52.07-.79.37-.27.3-1.03 1-1.03 2.44 0 1.43 1.05 2.82 1.2 3.02.15.2 2.07 3.16 5.01 4.3.7.3 1.24.47 1.66.6.7.22 1.33.19 1.83.11.56-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.08-.12-.28-.2-.58-.35z"/></svg>
+        WhatsApp
+      </a> -->
+    </section>
+
+    <p class="footer">© <span id="year"></span> Cabalito SV • El Salvador</p>
+  </main>
+
+  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>
